@@ -1,0 +1,259 @@
+
+/* GLOBAL */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    overflow-x:hidden;
+    width:100%;
+    font-family: 'Inter', sans-serif;
+    background:#fff;
+}
+
+/* MAIN CONTAINER */
+section,
+.payment,
+.first-image-div,
+.proof-image-secton,
+.black-guy,
+.video{
+    width:100%;
+}
+
+/* IMAGES + VIDEOS */
+img,
+video{
+    max-width:100%;
+    height:auto;
+    display:block;
+    border-radius:12px;
+}
+
+/* FIRST FLYER SECTION */
+.first-image-div{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    align-items:center;
+    margin:20px auto;
+    width:100%;
+}
+
+.first-flyer{
+    width:60%;
+}
+
+.second-flyer{
+    width:40%;
+}
+
+/* BEFORE AFTER */
+.black-guy{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.before-after{
+    width:40%;
+}
+
+.before-after-wis{
+    width:55%;
+}
+
+/* PAYMENT / IMAGE GROUPS */
+.payment{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    align-items:center;
+    margin:20px auto;
+    flex-wrap:wrap;
+    padding:0 12px;
+}
+
+.payment img,
+.payment video{
+    width:48%;
+}
+
+/* VIDEO SECTION */
+.video{
+    margin-top:20px;
+}
+
+/* SPECIAL VIDEOS */
+.wisdom-talk{
+    width:58%;
+}
+
+.earpod{
+    width: 73%;
+}
+
+.head-line-dive{
+        margin-top: 5%;
+        border-color: red;
+        border-width: 3px;
+        padding: 5%;
+        background-color: rgb(242, 219, 219);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .money{
+        color: rgb(252, 0, 0);
+    }
+
+    .sub{
+        background-color: rgb(123, 31, 31);
+        border-radius: 5%;
+        padding: 2%;
+        
+        
+    }
+
+    #buynow-button{
+        background-color: rgb(244, 34, 34);
+        color: white;
+    }
+
+
+/* BUY BUTTON */
+#static-buy-now{
+    background-color:rgb(231, 4, 4);
+    color:white;
+    padding:6px 14px;
+    border-radius:999px;
+    font-weight:bold;
+}
+
+#static-buy-now:active{
+    background:red;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width:768px){
+
+    .head-line-dive{
+        margin-top: 5%;
+        border-color: red;
+        border-width: 3px;
+        padding: 5%;
+        background-color: rgb(242, 219, 219);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .money{
+        color: rgb(252, 0, 0);
+    }
+
+    .sub{
+        background-color: rgb(123, 31, 31);
+        border-radius: 5%;
+        padding: 2%;
+        
+        
+    }
+
+
+
+    .head-line-dive{
+        border-radius: 50px;
+        border-color: red;
+    }
+
+    body{
+        overflow-x:hidden;
+    }
+
+    section{
+        padding-left:16px !important;
+        padding-right:16px !important;
+    }
+
+    .ai-credit{
+        width: 10%;
+    }
+
+    h1{
+        font-size:2rem !important;
+        line-height:1.2 !important;
+    }
+
+    h2{
+        font-size:1.6rem !important;
+        line-height:1.3 !important;
+    }
+
+    p{
+        font-size:1rem !important;
+        line-height:1.6 !important;
+    }
+
+    /* STACK EVERYTHING */
+    .first-image-div,
+    .payment,
+    .black-guy{
+        flex-direction:column;
+          margin-left: 0;
+        margin-right: 0;
+    }
+
+    .first-flyer,
+    .second-flyer,
+    .before-after,
+    .before-after-wis,
+    .payment img,
+    .payment video,
+    .wisdom-talk,
+    .earpod{
+        width:100%;
+    }
+
+    /* BUTTON FIX */
+    a{
+        width:100%;
+    }
+
+    /* FIX BIG TEXT BLOCKS */
+    .text-4xl{
+        font-size:2rem !important;
+    }
+
+    .text-5xl{
+        font-size:2.5rem !important;
+    }
+
+    .text-6xl{
+        font-size:2.8rem !important;
+    }
+
+    /* CTA BUTTONS */
+    .rounded-full{
+        width:100%;
+        text-align:center;
+    }
+
+}
+
+/* LARGE SCREENS */
+@media (min-width:1024px){
+
+    .payment{
+        max-width:1000px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    section{
+        max-width:100%;
+    }
+
+}
